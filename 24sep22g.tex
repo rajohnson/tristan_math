@@ -1,0 +1,26 @@
+\documentclass[20pt]{extarticle} % extarticle allows larger font options than 12pt
+\usepackage{enumitem} % for easier alphabetic labels in enumerate.
+\usepackage{nopageno} % no page numbers
+\usepackage[margin=1.5in]{geometry}
+\newcommand\LongDivision[2]{%
+$\strut#1$\kern.25em\smash{\raise.3ex\hbox{$\big)$}}$\mkern-8mu
+        \overline{\enspace\strut#2}$}
+
+\begin{document}
+\hfill Grayson\\
+\null\hfill 24 September 2022
+
+\vspace{10mm}
+
+Evaluate:
+\vspace{20mm}
+\begin{enumerate}[label=\Alph*.), itemsep=\fill]
+\item \LongDivision{9}{747}
+\item \LongDivision{14}{644}
+\vfill\clearpage
+\vfill
+\item \LongDivision{99}{9801}
+\item \LongDivision{41}{2291}
+\vfill\end{enumerate}
+
+\end{document}
